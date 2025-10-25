@@ -20,6 +20,8 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
-/*    display: flex;
-    gap: 30px;*/
+    ul{
+        display: flex;
+        gap: 30px;
+    }
 `
