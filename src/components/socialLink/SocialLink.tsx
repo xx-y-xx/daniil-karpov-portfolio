@@ -2,9 +2,8 @@ import styled from "styled-components";
 import {Icon} from "../icon/Icon.tsx";
 
 
-export const SocialNetworkIcon = () => {
+export const IconSocialLink = () => {
     return (
-        <SocialList>
             <SocialList>
                 <SocialItem>
                     <SocialLink>
@@ -22,7 +21,6 @@ export const SocialNetworkIcon = () => {
                     </SocialLink>
                 </SocialItem>
             </SocialList>
-        </SocialList>
     );
 };
 

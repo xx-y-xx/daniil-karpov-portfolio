@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Menu} from "../../components/menu/Menu.tsx";
 import {Logo} from "../../components/logo/Logo.tsx";
-import {SocialNetworkIcon} from "../../components/socialLink/SocialLink.tsx";
+import {IconSocialLink} from "../../components/socialLink/SocialLink.tsx";
 
 
 export const Header = () => {
@@ -9,7 +9,7 @@ export const Header = () => {
         <StyledHeader>
             <Logo/>
             <Menu/>
-            <SocialNetworkIcon/>
+            <IconSocialLink/>
         </StyledHeader>
     );
 };

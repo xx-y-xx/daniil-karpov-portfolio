@@ -1,25 +1,29 @@
 import styled from "styled-components";
+import {Project} from "./Project.tsx";
+import {SectionTitle} from "../../components/menu/SectioTitle.tsx";
 import {FlexWrapper} from "../../components/flexWrapper/FlexWrapper.tsx";
-import photo from "../../assets/img/placeholder-projects.png";
-
 
 export const Projects = () => {
     return (
         <StyledProjects>
             <SectionTitle>Projects</SectionTitle>
-            <FlexWrapper direction="column">
-                <Photo src={photo} alt=""/>
-                <SectionTitle>PROJECT 1</SectionTitle>
-                <ProjectsText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</ProjectsText>
+            <FlexWrapper wrap="wrap">
+                <Project title={"Projects 1"}
+                         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Project title={"Projects 2"}
+                         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Project title={"Projects 3"}
+                         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Project title={"Projects 4"}
+                         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
             </FlexWrapper>
         </StyledProjects>
     );
 };
-const StyledProjects = styled.section``
-const SectionTitle = styled.h2``
-const Photo = styled.img`
-    width: 500px;
-    height: 280px;
-    object-fit: cover
+const StyledProjects = styled.section`
+    background: #ed609f;
+    min-height: 50vh;
 `
-const ProjectsText = styled.p``
+/*
+const StyledBoxProject = styled.div`
+    width: 50%`*/
