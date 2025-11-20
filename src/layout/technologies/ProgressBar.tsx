@@ -1,13 +1,34 @@
 import styled from "styled-components";
-
-export const ProgressBar = () => {
+type ProgressBarPropsType = {
+    progress: number;
+}
+// Компонент, который принимает пропс 'progress'
+export function ProgressBar = (props:ProgressBarPropsType) => {
+    // Убедитесь, что пропс передается как число или строка, которую можно интерполировать
     return (
-        <BarLanguage></BarLanguage>
+        <StyledProgressBackground>
+            <StyledProgress progress={progress} />
+        </StyledProgressBackground>
     );
 };
 
-const BarLanguage = styled.div`
-    width: 900px;
-    height: 300px;
-    background: #432e2e;
-`
+// 🟢 Родительский элемент (Background)
+const StyledProgressBackground = styled.div`
+    width: 100%;
+    max-width: 600px;
+    height: 50px;
+    background: #444;
+    border-radius: 5px;
+    overflow: hidden;
+`;
+
+// ⚪ Дочерний элемент (Заливка)
+const StyledProgress = styled.div`
+    height: 100%;
+    background: white; 
+
+    /* 💥 Динамическое свойство width 💥 */
+    width: ${props => props.progress}%;
+
+    transition: width 0.8s ease-in-out;
+`;

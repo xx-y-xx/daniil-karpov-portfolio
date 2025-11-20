@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../components/menu/SectioTitle.tsx";
 import {IconTechnologies} from "./IconTechnologies.tsx";
+import {ProgressBar} from "./ProgressBar.tsx";
 
 
 export const Technologies = () => {
@@ -8,7 +9,7 @@ export const Technologies = () => {
         <div>
             <StyleTechnologies>
                 <SectionTitle>Technologies</SectionTitle>
-                <ProgressBar></ProgressBar>
+                {/*<ProgressBar progress={'85'}/>*/}
                 <SectionTitle>Additional technologies and skills</SectionTitle>
                 <IconTechnologies/>
             </StyleTechnologies>
@@ -18,9 +19,3 @@ export const Technologies = () => {
 
 const StyleTechnologies = styled.section`
     background: #9039ea;`
-
-const ProgressBar = styled.div`
-    width: 900px;
-    height: 300px;
-    background: #432e2e;
-`
