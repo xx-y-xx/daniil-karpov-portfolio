@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../components/menu/SectioTitle.tsx";
 import {IconTechnologies} from "./IconTechnologies.tsx";
-import {ProgressBar} from "./ProgressBar.tsx";
+/*import {ProgressBar} from "./ProgressBar.tsx";*/
 
 
 export const Technologies = () => {

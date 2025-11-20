@@ -8,6 +8,7 @@ export default defineConfig({
       },
     }),
   ],
+    base:'/daniil-karpov-portfolio/',
   resolve: {
     alias: {
       "@": "/src",

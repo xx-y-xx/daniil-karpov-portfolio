@@ -1,3 +1,4 @@
+/*
 import styled from "styled-components";
 type ProgressBarPropsType = {
     progress: number;
@@ -7,7 +8,7 @@ export function ProgressBar = (props:ProgressBarPropsType) => {
     // Убедитесь, что пропс передается как число или строка, которую можно интерполировать
     return (
         <StyledProgressBackground>
-            <StyledProgress progress={progress} />
+         {/!*   <StyledProgress progress={progress} />*!/}
         </StyledProgressBackground>
     );
 };
@@ -27,8 +28,8 @@ const StyledProgress = styled.div`
     height: 100%;
     background: white; 
 
-    /* 💥 Динамическое свойство width 💥 */
+    /!* 💥 Динамическое свойство width 💥 *!/
     width: ${props => props.progress}%;
 
     transition: width 0.8s ease-in-out;
-`;
+`;*/
