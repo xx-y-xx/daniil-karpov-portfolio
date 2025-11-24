@@ -1,7 +1,12 @@
 import {Icon} from "../icon/Icon.tsx";
+import styled from "styled-components";
 
 export const Logo = () => {
     return (
-        <Icon iconID={'logo'} width={"185"} height={"47.58"} viewBox={"0 0 185 47.58"}/>
+        <PortfolioLogo href="https://xx-y-xx.github.io/daniil-karpov-portfolio/">
+            <Icon iconID={'logo'} width={"182"} height={"42"} viewBox={"0 0 188 48"}/>
+        </PortfolioLogo>
     );
 };
+
+const PortfolioLogo = styled.a``

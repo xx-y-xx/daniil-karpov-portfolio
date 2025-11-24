@@ -1,35 +1,41 @@
-/*
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.tsx";
+
 type ProgressBarPropsType = {
     progress: number;
+    language: string;
 }
-// Компонент, который принимает пропс 'progress'
-export function ProgressBar = (props:ProgressBarPropsType) => {
-    // Убедитесь, что пропс передается как число или строка, которую можно интерполировать
+
+export const ProgressBar = (props: ProgressBarPropsType) => {
     return (
-        <StyledProgressBackground>
-         {/!*   <StyledProgress progress={progress} />*!/}
-        </StyledProgressBackground>
+        <WrapProgress>
+            <NameLanguage>{props.language}</NameLanguage>
+            <BackgroundProgress>
+                <StyledProgress $progress={props.progress}/>
+            </BackgroundProgress>
+        </WrapProgress>
     );
 };
-
-// 🟢 Родительский элемент (Background)
-const StyledProgressBackground = styled.div`
+const WrapProgress = styled.div`
+    padding: 0 120px;
+    margin: 0 auto;`
+const NameLanguage = styled.span`
+    display: inline-block;
+    margin-top: 25px;
+    padding-left:30px`
+const BackgroundProgress = styled.div`
     width: 100%;
-    max-width: 600px;
-    height: 50px;
-    background: #444;
-    border-radius: 5px;
     overflow: hidden;
-`;
 
-// ⚪ Дочерний элемент (Заливка)
-const StyledProgress = styled.div`
+    max-width: 900px;
+    border-radius: 83px;
+    height: 18px;
+    background-color: #162950;
+`
+
+
+const StyledProgress = styled.div<{ $progress: number }>`
     height: 100%;
-    background: white; 
-
-    /!* 💥 Динамическое свойство width 💥 *!/
-    width: ${props => props.progress}%;
-
-    transition: width 0.8s ease-in-out;
-`;*/
+    background: ${Theme.colors.gradientBg};
+    width: ${props => props.$progress}%;
+`
