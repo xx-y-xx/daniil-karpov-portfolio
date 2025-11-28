@@ -16,9 +16,9 @@ export const GlobalStyle = createGlobalStyle`
         monospace;
     }
     section:nth-of-type(odd){
-        background-color: ${Theme.colors.primaryBg};
+        background-color: ${Theme.colors.primaryBg};        
     }
-    section:nth-of-type(even){
+    section:nth-of-type(even){        
         background-color: ${Theme.colors.secondaryBg};
     }
 
@@ -32,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         a {
+            font-family:"Poppins", sans-serif;
             text-decoration: none;
             color: ${Theme.colors.font};
             &:hover {
