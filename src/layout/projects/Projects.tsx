@@ -2,13 +2,14 @@ import styled from "styled-components";
 import {Project} from "./Project.tsx";
 import {SectionTitle} from "../../components/menu/SectioTitle.tsx";
 import {Container} from "../../components/Container.tsx";
+import {FlexWrapper} from "../../components/flexWrapper/FlexWrapper.tsx";
 
 export const Projects = () => {
     return (
         <StyledProjects>
             <Container>
                 <StyledSectionTitle>Projects</StyledSectionTitle>
-                <WrapProject>
+                <WrapProject justify={'space-between'}>
                     <Project title={"Projects 1"}
                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                     <Project title={"Projects 2"}
@@ -24,10 +25,7 @@ export const Projects = () => {
 };
 const StyledProjects = styled.section`
 padding: 100px 0 140px`
-const WrapProject = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px`
-
+const WrapProject = styled(FlexWrapper)`
+gap:20px`
 const StyledSectionTitle = styled(SectionTitle)`
 margin-bottom: 70px;`

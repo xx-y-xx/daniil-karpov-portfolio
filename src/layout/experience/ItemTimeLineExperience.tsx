@@ -9,12 +9,10 @@ type ExperiencePropsType = {
 
 export const ItemTimeLineExperience = (props: ExperiencePropsType) => {
     return (
-        <div>
             <WrapItem>
                 <StyledYear>{props.year}</StyledYear>
                 <StyledDescription>{props.description}</StyledDescription>
             </WrapItem>
-        </div>
     );
 };
 

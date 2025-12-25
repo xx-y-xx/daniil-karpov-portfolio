@@ -17,7 +17,7 @@ export const Project = (props:ProjectPropsType) => {
     );
 };
 const Photo = styled.img`
-    width: 500px;
+    width: 100%;
     height: 280px;
     object-fit: cover;
 `
@@ -42,13 +42,13 @@ const ProjectsText = styled.p`
 margin: 70px 0 50px;`
 const StyledBoxProject = styled.div`
     text-align: left;
-    
-    border-radius:40px 0 40px 0;
+
+    border-radius: 40px 0 40px 0;
     border: 1px solid #a39d9d;
-    
-    padding:25px 25px 40px;
+
+    padding: 25px 25px 40px;
     max-width: 550px;
-    width: 100%;`
+    width: 50%;`
 const LinkProject = styled.a`
     border-radius: 83px;
     width: 200px;

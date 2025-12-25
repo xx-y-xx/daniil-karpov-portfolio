@@ -35,6 +35,7 @@ const StyledHeader = styled.header`
 `
 const HeaderWrapper = styled(FlexWrapper)`
   height: 100%;
+    flex-shrink:10;
 `;
 const HeaderContainer = styled(Container)`
   height: 100%;

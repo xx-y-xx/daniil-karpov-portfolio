@@ -39,7 +39,8 @@ const Mask = styled.span`
         }
     }
 `
-const StyledHeaderMenu = styled.nav`ul{
+const StyledHeaderMenu = styled.nav`
+    ul{
     display:flex;
     gap: 30px}`
 const ListItem = styled.li`

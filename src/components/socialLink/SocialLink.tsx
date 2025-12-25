@@ -7,7 +7,7 @@ export const IconSocialLink = () => {
             <SocialList>
                 <SocialItem>
                     <SocialLink>
-                        <Icon iconID={"telegram"} width={"32"} height={"32"} viewBox={"0 0 38 32"}></Icon>
+                        <Icon iconID={"gitHubBlack"} width={"32"} height={"32"} viewBox={"0 0 32 32"}></Icon>
                     </SocialLink>
                 </SocialItem>
                 <SocialItem>
@@ -17,7 +17,7 @@ export const IconSocialLink = () => {
                 </SocialItem>
                 <SocialItem>
                     <SocialLink>
-                        <Icon iconID={"gitHubBlack"} width={"32"} height={"32"} viewBox={"0 0 32 32"}></Icon>
+                        <Icon iconID={"telegram"} width={"32"} height={"32"} viewBox={"0 0 38 32"}></Icon>
                     </SocialLink>
                 </SocialItem>
             </SocialList>
